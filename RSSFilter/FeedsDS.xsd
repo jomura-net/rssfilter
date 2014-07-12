@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FeedsDS" targetNamespace="http://tempuri.org/FeedsDS.xsd" xmlns:mstns="http://tempuri.org/FeedsDS.xsd" xmlns="http://tempuri.org/FeedsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FeedsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="FeedsDS" msprop:Generator_UserDSName="FeedsDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FeedsDT" msprop:Generator_UserTableName="FeedsDT" msprop:Generator_RowEvArgName="FeedsDTRowChangeEvent" msprop:Generator_TableVarName="tableFeedsDT" msprop:Generator_TablePropName="FeedsDT" msprop:Generator_RowDeletingName="FeedsDTRowDeleting" msprop:Generator_RowChangingName="FeedsDTRowChanging" msprop:Generator_RowDeletedName="FeedsDTRowDeleted" msprop:Generator_RowEvHandlerName="FeedsDTRowChangeEventHandler" msprop:Generator_RowChangedName="FeedsDTRowChanged" msprop:Generator_TableClassName="FeedsDTDataTable" msprop:Generator_RowClassName="FeedsDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FeedURL" msprop:Generator_ColumnVarNameInTable="columnFeedURL" msprop:Generator_ColumnPropNameInRow="FeedURL" msprop:Generator_ColumnPropNameInTable="FeedURLColumn" msprop:Generator_UserColumnName="FeedURL" type="xs:string" />
+              <xs:element name="FilterString" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="FilterString" msprop:Generator_ColumnVarNameInTable="columnFilterString" msprop:Generator_ColumnPropNameInTable="FilterStringColumn" msprop:Generator_UserColumnName="FilterString" type="xs:string" />
+              <xs:element name="TargetTitle" msprop:Generator_ColumnVarNameInTable="columnTargetTitle" msprop:Generator_ColumnPropNameInRow="TargetTitle" msprop:Generator_ColumnPropNameInTable="TargetTitleColumn" msprop:Generator_UserColumnName="TargetTitle" type="xs:boolean" minOccurs="0" />
+              <xs:element name="TargetDescription" msprop:Generator_ColumnVarNameInTable="columnTargetDescription" msprop:Generator_ColumnPropNameInRow="TargetDescription" msprop:Generator_ColumnPropNameInTable="TargetDescriptionColumn" msprop:Generator_UserColumnName="TargetDescription" type="xs:boolean" minOccurs="0" />
+              <xs:element name="NewFeedURL" msprop:Generator_ColumnVarNameInTable="columnNewFeedURL" msprop:Generator_ColumnPropNameInRow="NewFeedURL" msprop:Generator_ColumnPropNameInTable="NewFeedURLColumn" msprop:Generator_UserColumnName="NewFeedURL" type="xs:string" minOccurs="0" />
+              <xs:element name="ResistDate" msprop:Generator_ColumnVarNameInTable="columnResistDate" msprop:Generator_ColumnPropNameInRow="ResistDate" msprop:Generator_ColumnPropNameInTable="ResistDateColumn" msprop:Generator_UserColumnName="ResistDate" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FeedsDT" />
+      <xs:field xpath="mstns:FilterString" />
+      <xs:field xpath="mstns:FeedURL" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
