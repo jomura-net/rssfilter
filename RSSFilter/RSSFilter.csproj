@@ -98,6 +98,7 @@
     <Content Include="FeedsDS.xss">
       <DependentUpon>FeedsDS.xsd</DependentUpon>
     </Content>
+    <None Include="Properties\PublishProfiles\jomura.net.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
